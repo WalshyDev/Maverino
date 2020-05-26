@@ -1,0 +1,21 @@
+<configuration>
+
+    <variable scope="context" name="logPattern" value="[%d{yyyy.MM.dd HH:mm}] [%t] [%level] %msg%n"/>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>./latest.log</file>
+        <encoder>
+            <pattern>${logPattern}</pattern>
+        </encoder>
+    </appender>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${logPattern}</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>
