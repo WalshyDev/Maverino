@@ -8,6 +8,7 @@
     <artifactId>MavenRepo</artifactId>
     <version>1.0</version>
 
+<!--
     <distributionManagement>
         <repository>
             <id>walshy-public</id>
@@ -22,6 +23,7 @@
             <url>http://localhost:8888/public/</url>
         </repository>
     </repositories>
+-->
 
     <dependencies>
         <dependency>
